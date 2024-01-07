@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Movies</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <nav>
+    <img class="logo" src="./logo-d-plus.webp" alt="">
+    <div class="search">
+    <input type="text" placeholder="search any movie..." onchange="searchMovie()" id="title">
+    <button onclick="searchMovie()" id="search-icon"><svg "xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg></button>
+    </div>
+    </nav>
+    <div id="notfound" class="d_none">
+       <img src="./nosearch.png" alt="" style="margin-left: 170px" height="250px" width="250px" >
+       <h3 style="margin-top: 30px;">That's a miss</h3>
+       <p>Try searching for something else or Please try with a different spelling</p> 
+    </div>
+    <div id="found" class="moviecontainer d_none">
+    <div class="items">
+    
+        <h3 class="moviename" id="moviename">Pushpa</h3>
+        <p><span id="desc"></span></p>
+        <p>Released on : <span id="date"></span></p>
+        <p>Genre:<span id="genre"></span></p>
+        <p>Actors:<span id="actors"></span></p>
+        <p>Box office collection:<span id="collections"></span></p>
+        <p>Awards:<span id="awards"></span></p>
+        <p>Director:<span id="director"></span></p>
+        <p>Writer:<span id="writer"></span></p>
+        <p>IMDB rating:<span id="ratings"></span></p>
+    </div>
+    <img src="./pushpa.jpg" alt="" class="poster" id="poster">
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
